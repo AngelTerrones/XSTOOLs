@@ -451,7 +451,7 @@ class GxsFlashPanel(wx.Panel):
         addr_vsizer.Add(self._lo_addr_ctrl)
 
         flash_bmp = _bitmap('serial_flash.png')
-        flash_stbmp = wx.StaticBitmap(self, label=flash_bmp)
+        flash_stbmp = wx.StaticBitmap(self, bitmap=flash_bmp)
 
         chip_hsizer = wx.BoxSizer(wx.HORIZONTAL)
         chip_hsizer.Add(flash_stbmp)
@@ -680,7 +680,7 @@ class GxsSdramPanel(wx.Panel):
         addr_vsizer.Add(self._lo_addr_ctrl)
 
         sdram_bmp = _bitmap('sdram.png')
-        sdram_stbmp = wx.StaticBitmap(self, label=sdram_bmp)
+        sdram_stbmp = wx.StaticBitmap(self, bitmap=sdram_bmp)
 
         chip_hsizer = wx.BoxSizer(wx.HORIZONTAL)
         chip_hsizer.Add(sdram_stbmp)
@@ -869,7 +869,7 @@ class GxsFpgaConfigPanel(wx.Panel):
         self.handle_download_button(dummy=None)
 
         fpga_bmp = _bitmap('fpga.png')
-        fpga_stbmp = wx.StaticBitmap(self, label=fpga_bmp)
+        fpga_stbmp = wx.StaticBitmap(self, bitmap=fpga_bmp)
 
         vsizer = wx.BoxSizer(wx.VERTICAL)
         vsizer.AddSpacer(5)
@@ -965,7 +965,7 @@ class GxsMicrocontrollerPanel(wx.Panel):
         self.handle_download_button(dummy=None)
 
         uc_bmp = _bitmap('uC.png')
-        uc_stbmp = wx.StaticBitmap(self, label=uc_bmp)
+        uc_stbmp = wx.StaticBitmap(self, bitmap=uc_bmp)
 
         vsizer = wx.BoxSizer(wx.VERTICAL)
         vsizer.AddSpacer(5)
